@@ -1,0 +1,75 @@
+<html>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+
+<h2 class="title"> Inheritance diagram for language CalculatorModel </h2>
+<div class="mermaid">
+    %%{init: {'theme': 'forest'} }%%
+    classDiagram
+    direction TD
+    %% other possibilites: LR RL DT TB (same as TD)
+    class InputFieldReference {
+        
+        
+    }
+    class CalcExpression:::abstract {
+        
+        
+    }
+    class LiteralExpression:::abstract {
+        
+        
+    }
+    class NumberLiteralExpression {
+        
+        + string value
+    }
+    class BinaryExpression:::abstract {
+        
+        
+    }
+    class MultiplyExpression {
+        
+        
+    }
+    class PlusExpression {
+        
+        
+    }
+    class MinusExpression {
+        
+        
+    }
+    class DivideExpression {
+        
+        
+    }
+    CalcExpression <|-- InputFieldReference
+CalcExpression <|-- LiteralExpression
+LiteralExpression <|-- NumberLiteralExpression
+CalcExpression <|-- BinaryExpression
+BinaryExpression <|-- MultiplyExpression
+BinaryExpression <|-- PlusExpression
+BinaryExpression <|-- MinusExpression
+BinaryExpression <|-- DivideExpression
+
+</div>
+
+</body>
+</html>
+
+<style>
+    .abstract .classTitle {
+        font-style: italic;
+    }
+    .title {
+        font-family: "Gill Sans MT";
+    }
+    .interface .classTitle {
+        font-style: italic;
+        font-weight: bold;
+    }
+</style>
