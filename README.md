@@ -24,5 +24,5 @@ the project and run `npm install` again in order to get the right version of the
    * node-modules/net.akehurst.language-agl-processor/package.json: the main entry is to an .mjs file 
    instead of a .js file,
    * reader/*: all imports of AGL are changed.
-3. The `using-new-agl-2` branch has a folder `src/new-reader`, which contains a number of trials. I would like to 
+3. TO BE DONE: The `using-new-agl-2` branch has a folder `src/new-reader`, which contains a number of trials. I would like to 
    use a visitor over the sppt to generate the ASM that can be used by the rest of the code in this project.
