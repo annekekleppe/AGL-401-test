@@ -12,14 +12,14 @@ import {
     PlusExpression,
     MinusExpression,
     DivideExpression,
-} from "../../language/gen";
-import { CalculatorModelSyntaxAnalyser } from "./CalculatorModelSyntaxAnalyser";
+} from "@freon4dsl/samples-calculator/dist/language/gen";
+import { OldCalculatorModelSyntaxAnalyser } from "./OldCalculatorModelSyntaxAnalyser";
 import { FreNodeReference } from "@freon4dsl/core";
 
-export class CalculatorSyntaxAnalyserPart {
-    mainAnalyser: CalculatorModelSyntaxAnalyser;
+export class OldCalculatorSyntaxAnalyserPart {
+    mainAnalyser: OldCalculatorModelSyntaxAnalyser;
 
-    constructor(mainAnalyser: CalculatorModelSyntaxAnalyser) {
+    constructor(mainAnalyser: OldCalculatorModelSyntaxAnalyser) {
         this.mainAnalyser = mainAnalyser;
     }
 

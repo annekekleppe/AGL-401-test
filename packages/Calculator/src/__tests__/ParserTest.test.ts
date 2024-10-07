@@ -19,7 +19,7 @@ describe("Parser test", () => {
             ) as FreModelUnit;
             expect(unit1).not.toBeNull();
         } catch (e) {
-            console.log(e.message);
+            console.log(e.message + e.stack);
             expect(e).toBeNull();
         }
     });
