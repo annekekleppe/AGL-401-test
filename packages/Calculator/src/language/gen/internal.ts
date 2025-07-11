@@ -8,18 +8,18 @@
  * concepts that are extending them.
  */
 
-export * from "./CalculatorModel";
-export * from "./Calculator";
-export * from "./INamedConcept";
-export * from "./InputField";
-export * from "./OutputField";
-export * from "./CalcExpression";
-export * from "./InputFieldReference";
-export * from "./LiteralExpression";
-export * from "./BinaryExpression";
-export * from "./NumberLiteralExpression";
-export * from "./MultiplyExpression";
-export * from "./PlusExpression";
-export * from "./MinusExpression";
-export * from "./DivideExpression";
-export * from "./CalculatorModelLanguage";
+export * from "./CalculatorModel.js";
+export * from "./Calculator.js";
+export * from "./INamedConcept.js";
+export * from "./InputField.js";
+export * from "./OutputField.js";
+export * from "./CalcExpression.js";
+export * from "./InputFieldReference.js";
+export * from "./LiteralExpression.js";
+export * from "./BinaryExpression.js";
+export * from "./NumberLiteralExpression.js";
+export * from "./MultiplyExpression.js";
+export * from "./PlusExpression.js";
+export * from "./MinusExpression.js";
+export * from "./DivideExpression.js";
+export * from "./CalculatorModelLanguage.js";

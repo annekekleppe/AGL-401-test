@@ -9,9 +9,9 @@ describe("Parser test", () => {
     test(" number 1", () => {
         try {
             const sentence: string =
-                `Calculator a
-                input i
-                output o`;
+                `Calculator \`a\`
+                input \`i\`
+                output \`o\` `;
             const unit1: FreModelUnit = reader.readFromString(
                 sentence,
                 "Calculator",
@@ -19,7 +19,7 @@ describe("Parser test", () => {
             ) as FreModelUnit;
             expect(unit1).not.toBeNull();
         } catch (e) {
-            console.log(e.message + e.stack);
+            console.log(e.message);
             expect(e).toBeNull();
         }
     });

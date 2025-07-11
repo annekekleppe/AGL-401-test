@@ -48,10 +48,19 @@
         
         
     }
+    class Calculator {
+        <<modelunit>>
+        + identifier name
+    }
     class INamedConcept {
         <<interface>>
         + identifier name
     }
+    Calculator *-- "0..*" InputField : inputFields
+
+		Calculator *-- "0..*" OutputField : outputFields
+
+        
     CalcExpression <|-- InputFieldReference
 CalcExpression <|-- LiteralExpression
 LiteralExpression <|-- NumberLiteralExpression

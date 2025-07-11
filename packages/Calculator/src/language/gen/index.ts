@@ -19,6 +19,6 @@ export {
     PlusExpression,
     MinusExpression,
     DivideExpression,
-    INamedConcept,
+    type INamedConcept,
     initializeLanguage,
-} from "./internal";
+} from "./internal.js";
